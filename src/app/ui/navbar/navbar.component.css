@@ -1,0 +1,287 @@
+
+
+:host {
+
+    margin-top: 17px;
+    margin-bottom: 48px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    /* border: 1px solid red; */
+
+    width: 90%;
+
+
+}
+
+
+:host img {
+    width: 3vw;
+    aspect-ratio: 979/477;
+
+}
+
+.adapt{
+    flex-grow: 1;
+    visibility: visible;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+:host .navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+
+    /* border: 1px solid blue; */
+
+
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    /* margin-right: auto; */
+
+
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+.hidden {
+    visibility: visible;
+}
+
+
+:host .navbar   li  a {
+
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    position: relative;
+
+
+    text-decoration: none;
+    color: white;
+    
+    font-weight: semi-bold;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+
+    transition: opacity 2s;
+}
+
+:host .navbar   li  a:hover{
+
+    opacity: 0.5;
+
+}
+
+.currentPage::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%; /* Longueur de la bordure */
+    border-bottom: 2px solid #E6007E; /* Couleur et épaisseur de la bordure */
+}
+
+
+.store-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.market_place{
+    display: none;
+
+    text-decoration: none;
+    
+    color: white;
+    font-size: clamp(18px, 1vw, 30px);
+    
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+}
+
+.store-button{
+    text-decoration: none;
+}
+.store-button img {
+
+    width: 135px;
+
+    aspect-ratio: 135/40; 
+    display: block;
+}
+
+.menu-icon {
+    /* visibility: hidden; */
+    display: none;
+
+    font-size: 24px; /* Taille de l'icône */
+    color: white; /* Couleur de l'icône */
+    cursor: pointer; /* Curseur en forme de main pour indiquer qu'il est cliquable */
+}
+
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D71B8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size:    clamp(15px, 3vh, 26px);
+}
+
+.cta-button .icon-container i {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+/* Redimentionnement du  menu d'entete*/
+
+@media  (max-width: 1084px) {
+
+    .menu-icon{
+        display: block;
+    }
+
+
+    .adapt{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top: 60px;  /* Positionnez-le selon vos besoins */
+        right: 10px; /* Positionnez-le selon vos besoins */
+        background-color: white; /* Couleur différente pour la distinction */
+        border-radius: 5%;
+
+        z-index: 2;
+        width: 250px;
+
+    }
+   
+    .visible{
+        visibility: visible;
+    }
+
+    .hidden{
+        visibility: hidden;
+    }
+    
+
+
+    :host .navbar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        gap : 30px;
+    }
+
+    :host .navbar   li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 0.1px solid #cac4d06c;
+
+    }
+
+    :host .navbar   li  a {
+        font-size: 15px;
+        color: black;
+    }
+
+    .store-buttons{
+
+        display: none;
+        /* border-top: 0.1px solid #cac4d06c; 
+
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 0px;
+
+        width: 100%; */
+    }
+
+    .store-button{
+        padding: 5px 0px;
+    }
+
+    .store-button img {
+        display: none;
+    }
+
+    :host img {
+        width: 120px;
+        aspect-ratio: 979/477;
+    
+    }
+}
+
+
+
+@media (max-width: 500px ){
+    :host .navbar{
+        gap: 20px;
+    }
+
+
+    :host .navbar   li  a {
+        font-size: 15px;
+    }
+
+    :host img {
+        width: 50px;
+        aspect-ratio: 979/477;
+    
+    }
+}
+

@@ -1,0 +1,8 @@
+# Bloquer l'accès à l'admin du site
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+# Autoriser tout le reste
+Allow: /
+

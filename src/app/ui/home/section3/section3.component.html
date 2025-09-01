@@ -1,0 +1,95 @@
+<section class="section4">
+
+    <div class="header"  *ngIf="show" data-aos="zoom-in-down"
+    data-aos-anchor-placement="top-center">
+
+        <article>
+            <h2>
+                Comment ça <br> Marche ?
+            </h2>
+
+            <p>
+                Ci-dessous , vous avez un aperçu clair et concis du <br> fonctionnement de notre solution.
+            </p>
+        </article>
+
+        <div>
+
+                <img src="assets/mini_kit_mobile.png">
+
+            
+        </div>
+
+
+    </div>
+
+    <div class="body" >
+
+        <img 
+
+        *ngIf="show" data-aos="zoom-in-down"
+        data-aos-anchor-placement="top-center"
+
+
+         src="assets/scenario.png" alt="" class="baniere">
+
+
+        <div class="features">
+
+            <div class="feature" 
+             *ngFor="let item of articles"
+
+
+             data-aos="zoom-in-down"
+            data-aos-anchor-placement="top-center"
+
+             
+             
+             >
+
+
+
+              <div class="icon"> {{item.rang}}</div>
+              <div class="text">
+                <strong> {{item.title}} </strong>
+                
+                <p>
+                  
+                  {{item.content}}
+    
+                </p>
+              </div>
+            </div>
+            
+
+        </div>
+          
+
+    </div>
+
+
+    <div class="news_letter" 
+    *ngIf="show" data-aos="zoom-in-down">
+
+        <p>
+            Abonnez-vous à notre newsletter <br> pour recevoir nos dernières actualités.
+
+        </p>
+
+
+            
+        <form   
+>
+            <div class="input-wrapper">
+                <input type="email" placeholder="Entrez votre e-mail" required>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </form>
+
+    </div>
+</section>

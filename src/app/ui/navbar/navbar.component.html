@@ -1,0 +1,32 @@
+<img src="assets/logo.png"  alt="logo"
+
+*ngIf="show"
+data-aos="zoom-in-down"
+>
+
+<div class="menu-icon" id="toggle-menu" (click)="toggleNavbar()"
+*ngIf="show"
+data-aos="zoom-in-down"
+>
+    <i class="fas fa-bars"></i>
+</div>
+
+<div class="adapt" id="adapt" *ngIf="show"  #adapt  data-aos="zoom-in-down">
+
+        <ul class="navbar">
+            <li><a  routerLinkActive="currentPage" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Acceuil</a></li>
+            <li><a  routerLinkActive="currentPage"routerLink="/contact">Contactez-nous</a></li>
+            <li><a  routerLinkActive="currentPage" routerLink="/about">Qui sommes-nous</a></li>
+        </ul>
+
+    <div class="store-buttons">
+        <a href="#" class="store-button google-play">            
+            <img src="assets/Mobile play store badge .png" alt="Get it on Google Play">
+        </a>
+
+        <a href="#" class="store-button app-store">
+            <img src="assets/Mobile app store badge.png" alt="Download on the App Store">
+        </a>
+    </div>
+    
+</div>

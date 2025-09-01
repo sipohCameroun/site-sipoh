@@ -1,0 +1,52 @@
+<section class="section3" >
+
+    <div *ngIf="show"
+    data-aos="zoom-in-down"
+    data-aos-anchor-placement="top-center"
+
+    class="header"    >
+
+        <h2>
+            Fonctionnalités Clés de SIPOH
+        </h2>
+
+        <p>
+            Nous mettons à votre disposition une large gamme de fonctionnalités pour répondre à vos besoins.
+        </p>
+
+    </div>
+
+    <div class="fonctionnalites">
+
+
+        <article *ngFor="let item of articles" data-aos="zoom-in-down" 
+        data-aos-anchor-placement="top-center"
+        >
+
+
+            <div class="icon">
+                <img src={{item.icon}} alt="">
+                    
+            </div>
+
+
+            <h3 [innerHTML]="item.title">
+                
+            </h3>
+
+            <p>
+                {{item.content}}
+            </p>
+        </article>
+
+
+
+
+        
+    </div>
+
+
+    <div class="end">
+        
+    </div>
+</section>

@@ -1,0 +1,243 @@
+:host{
+
+    margin-top: 100px;
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    gap: 50px;
+
+
+    padding: 0 15% 0 15%;
+    box-sizing: border-box;
+
+}
+
+
+
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+article h2 {
+
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+
+}
+
+article  p {
+
+
+    box-sizing: border-box;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 2;
+    text-align: justify;
+    letter-spacing: 0.5px;
+
+
+}
+
+
+
+.team-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.team{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+    margin: 50px 0 ;
+
+    max-width: 1051px;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.membre{
+    box-sizing: border-box;
+    width: 248px;
+    height: 351px;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.2) ;
+}
+
+.membre img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 248px;
+    border-radius: 8px 8px 0 0;
+
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.membre img:hover{
+    transform: scale(1.06) rotate(-3deg);
+}
+
+
+.content{
+
+
+    padding: auto;
+
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.content h3{
+
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 0.4;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content p{
+    font-size: 15px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Taille des  polices d'articles */
+
+
+@media (max-width: 1400px){
+    :host{
+        
+            padding: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 1108px){
+
+    article{
+        /* width: 40%; */
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    :host{
+        padding: 0 10% 0 10%;
+    }
+
+    article{
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Taille des  polices d'articles sur mobile */
+
+
+/* Taille des  polices d'articles */
+
+@media (max-width: 1004px){
+    article h2 {
+        font-size: 2.5vw;
+        line-height: 38.4px;
+    }
+
+    article p {
+        font-size: 2vw;
+        line-height: 2;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 557px){
+
+    :host{
+        margin-top: 25px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Taille des  polices d'articles sur mobile */
+
+@media (max-width: 425px){
+
+    :host{
+        margin-top: 50px;
+    }
+
+
+    article h2 {
+        font-size: 4vw;
+        line-height: 38.4px;
+    }
+
+    article p {
+        font-size: 3.5vw;
+        line-height: 2;
+    }
+}
